@@ -1,5 +1,5 @@
 # Проект YaMDb #
-![Yamdb Status](https://github.com/themasterid/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=push)
+![Yamdb Status](https://github.com/expertnsk/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 #### Проект YaMDb представляет из себя хранилище информации о произведений различных категорий и жанров, отзывов пользователей и комментариев к ним. 
 
