@@ -12,6 +12,7 @@ from rest_framework_simplejwt.tokens import AccessToken
 
 from api_yamdb.settings import ADMIN_EMAIL
 from reviews.models import Category, Genre, Title, User
+
 from .filters import TitlesFilter
 from .mixins import CreateListDestroyViewSet
 from .permissions import IsAdmin, IsAdminOrReadOnly, IsAuthorAdminOrReadOnly
@@ -139,8 +140,7 @@ class CommentViewSet(viewsets.ModelViewSet):
             review = title.reviews.get(id=self.kwargs.get('review_id'))
         except TypeError:
             TypeError('Ревью не соответствует произведению.')
-        queryset = review.comments.all()
-        return queryset
+        return review.comments.all()
 
     def perform_create(self, serializer):
         title = get_object_or_404(Title, id=self.kwargs.get('title_id'))
