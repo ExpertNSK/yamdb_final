@@ -107,7 +107,7 @@ exit
 docker-compose exec web python manage.py dumpdata > fixtures.json
 ```
 
-### Остновка/запуск готовых контейнеров
+### Остановка/запуск готовых контейнеров
 ```
 docker-compose stop
 /
