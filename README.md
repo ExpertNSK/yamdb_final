@@ -93,6 +93,7 @@ select nextval('"reviews_review_id_seq"');
 ```
 Убеждаемся, что первое значение больше второго. Задаем значение
 для следующего числа последовательности:
+
 ```
 select setval('reviews_review_id_seq', (select max(id) from reviews_review)+1);
 ```
