@@ -34,7 +34,7 @@ services:
 
       - media_value:/var/html/media/
 
-      - docs_value:/var/html/static/
+      - docs_value:/var/html/docs/
 
     depends_on:
       - web
